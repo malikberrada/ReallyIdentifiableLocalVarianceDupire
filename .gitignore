@@ -1,0 +1,17 @@
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+runs/
+data/downloaded/
+# Optional author-supplied evidence is installed locally.
+examples/*
+!examples/yahoo_spxw/
+!examples/general_informative_domain.json
+examples/yahoo_spxw/raw_snapshot.json
+rejeu_r3/*.zip
+rejeu_r3/*.npz
+rejeu_r3/horloges.json

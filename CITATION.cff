@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the software and record the Git commit used for reproduction."
+title: "Dupire Identify — local variance identification and certified bounds"
+type: software
+authors:
+  - family-names: Berrada
+    given-names: Abdelmalik
+repository-code: "https://github.com/malikberrada/ReallyIdentifiableLocalVarianceDupire"
+license: MIT

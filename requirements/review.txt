@@ -1,0 +1,17 @@
+# CPU reference environment on CPython 3.12. Build with --no-build-isolation.
+numpy==2.3.5
+scipy==1.17.0
+highspy==1.16.0
+pandas==2.2.3
+python-dateutil==4.0.0
+pytz==2026.6
+tzdata==2026.6
+pytest==9.2.0
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+colorama==0.4.6; sys_platform == "win32"
+setuptools==84.2.1
+wheel==0.48.0
+pybind11==3.1.0

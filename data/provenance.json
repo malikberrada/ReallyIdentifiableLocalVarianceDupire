@@ -1,0 +1,43 @@
+{
+  "observation": "SPXW, 2026-10-26, first capture",
+  "provider": "Yahoo Finance via yfinance.Ticker(\"^SPX\").option_chain(expiry)",
+  "started_utc": "2026-10-26T19:31:29.106182+00:00",
+  "ended_utc": "2026-10-26T19:31:43.546751+00:00",
+  "expiry_selection": {
+    "expiry_rule": "spread_by_date_before_prices",
+    "available_count": 54,
+    "selected_expiries": [
+      "2026-11-09",
+      "2026-11-16",
+      "2026-11-23",
+      "2026-12-03",
+      "2027-01-15",
+      "2027-04-16"
+    ]
+  },
+  "quote_timestamps_available": false,
+  "raw_snapshot.json": {
+    "bundled": "examples/yahoo_spxw/raw_snapshot.json",
+    "bytes": 919067,
+    "sha256": "0c44b9b66a46b238d891ffbeb21fcaf65299f4987a9cf8b9f51993921e60db41",
+    "url": "https://raw.githubusercontent.com/malikberrada/DupireLocalVolatilityForward/423b81938ac4661811119497b03ee3487acaacc5/data/raw/yahoo/2026-10-26/attempt_01.json"
+  },
+  "session_closes.json": {
+    "bundled": "examples/yahoo_spxw/session_closes.json",
+    "bytes": 439,
+    "sha256": "b7f3ecb078baee90563c3642982f5bb68cff299ee0fd05e593081344a88717c5"
+  },
+  "synthetic_quotes": {
+    "bundled": "examples/exact_initial/normalized.csv",
+    "bytes": 2340,
+    "sha256": "aaf81cb73eca2b79049f1c0255853bca4f4c39b6645775d24ed314a5a028b656"
+  },
+  "informative_quotes": {
+    "bytes": 2577,
+    "sha256": "9af33b9a4b1a6cd148103e4e8875dbcab7e12c6ca7eee6b230e7298480eda4be"
+  },
+  "synthetic_certificates": {
+    "synthetic_1_4": "4f851b765bc93e0ff2d885d85078596f910d0407c7d596c0443cdf04fba99823",
+    "synthetic_2_4": "3eac57beb5732947ce7778d1f55551e8f9856309627a96fafd404010d89fa416"
+  }
+}

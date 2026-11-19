@@ -1,0 +1,1079 @@
+{
+  "symbol": "^SPX",
+  "root": "SPXW",
+  "style": "european",
+  "settlement": "PM cash",
+  "spec": "https://www.cboe.com/tradable_products/sp_500/spx_weekly_options/specifications/",
+  "expiry": "2026-11-09",
+  "available_expiries": [
+    "2026-11-09",
+    "2026-11-16",
+    "2026-11-23",
+    "2026-12-03",
+    "2027-01-15",
+    "2027-04-16"
+  ],
+  "snapshot_start": "2026-10-26T19:31:29.106182+00:00",
+  "snapshot_end": "2026-10-26T19:31:43.546751+00:00",
+  "valuation_utc": "2026-10-26T19:31:29.106182+00:00",
+  "retrieval": [
+    "2026-10-26T19:31:31.839840+00:00",
+    "2026-10-26T19:31:32.049705+00:00"
+  ],
+  "underlying_market_utc": "2026-10-26T19:16:27+00:00",
+  "underlying_delay_minutes": "15",
+  "regular_market_state": "REGULAR",
+  "regular_session_open_at_start": null,
+  "spot_for_selection_only": "191983/25",
+  "session_close_utc": "2026-11-09T21:00:00+00:00",
+  "calendar_source": "NYSE US equity holiday schedule 2026–2027 and Cboe SPXW PM contract specifications (cash closing session, New York).",
+  "act365f": "607455446909/15768000000000",
+  "bid_ask_synchronization_verified": false,
+  "rejected": [
+    {
+      "id": "SPXW261109C09000000",
+      "reason": "zero_bid"
+    },
+    {
+      "id": "SPXW261109C09200000",
+      "reason": "zero_bid"
+    },
+    {
+      "id": "SPXW261109P03200000",
+      "reason": "zero_bid"
+    },
+    {
+      "id": "SPXW261109P03400000",
+      "reason": "zero_bid"
+    },
+    {
+      "id": "SPXW261109P03800000",
+      "reason": "zero_bid"
+    },
+    {
+      "id": "SPXW261109P04000000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P04200000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P04400000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P04600000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P04800000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P05000000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P05200000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P05400000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P05600000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P05800000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06000000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06200000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06300000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06400000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06500000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06600000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06625000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06650000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06675000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06700000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06725000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06750000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06775000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06800000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06825000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06850000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06875000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06900000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06925000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06950000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P06975000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07000000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07025000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07050000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07075000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07100000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07125000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07150000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07175000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07200000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07225000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07275000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07280000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07290000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07310000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07320000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07330000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07340000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07360000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07370000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07375000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07380000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07390000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07400000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07410000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07420000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07425000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07440000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07450000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07460000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07470000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07475000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07480000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07490000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07500000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07515000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07535000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07545000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07555000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07565000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P07595000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07805000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07815000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07835000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07880000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07910000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07930000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07940000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07960000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07975000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08025000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08050000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08075000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08100000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08125000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08150000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08200000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08250000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08275000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08400000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08500000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08600000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C08800000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109P09800000",
+      "reason": "missing_or_ambiguous_pair"
+    },
+    {
+      "id": "SPXW261109C07250000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07250000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07300000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07300000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07325000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07325000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07350000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07350000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07430000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07430000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07510000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07510000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07520000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07520000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07530000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07530000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07540000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07540000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07550000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07550000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07560000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07560000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07570000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07570000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07575000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07575000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07580000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07580000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07585000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07585000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07590000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07590000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07600000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07600000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07610000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07610000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07615000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07615000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07620000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07620000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07625000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07625000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07630000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07630000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07635000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07635000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07640000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07640000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07645000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07645000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07650000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07650000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07655000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07655000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07660000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07660000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07665000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07665000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07670000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07670000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07675000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07675000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07685000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07685000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07690000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07690000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07695000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07695000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07700000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07700000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07705000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07705000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07710000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07710000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07715000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07715000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07720000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07720000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07725000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07725000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07730000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07730000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07735000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07735000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07740000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07740000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07745000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07745000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07750000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07750000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07760000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07760000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07765000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07765000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07770000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07770000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07775000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07775000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07780000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07780000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07785000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07785000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07790000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07790000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07795000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07795000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07800000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07800000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07810000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07810000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07820000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07820000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07825000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07825000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07840000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07840000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07850000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07850000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07860000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07860000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07870000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07870000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07875000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07875000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07890000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07890000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07900000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07900000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07920000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07920000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07925000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07925000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C07950000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P07950000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08000000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08000000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08175000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08175000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08225000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08225000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08300000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08300000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08325000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08325000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109C08350000",
+      "reason": "outside_requested_strikes"
+    },
+    {
+      "id": "SPXW261109P08350000",
+      "reason": "outside_requested_strikes"
+    }
+  ],
+  "retained": [
+    "SPXW261109C07525000",
+    "SPXW261109P07525000",
+    "SPXW261109C07605000",
+    "SPXW261109P07605000",
+    "SPXW261109C07680000",
+    "SPXW261109P07680000",
+    "SPXW261109C07755000",
+    "SPXW261109P07755000",
+    "SPXW261109C07830000",
+    "SPXW261109P07830000"
+  ],
+  "collection_errors": [],
+  "unselected_slices": [
+    {
+      "symbol": "^SPX",
+      "expiry": "2026-11-16",
+      "calls": 82,
+      "puts": 112
+    },
+    {
+      "symbol": "^SPX",
+      "expiry": "2026-11-23",
+      "calls": 63,
+      "puts": 93
+    },
+    {
+      "symbol": "^SPX",
+      "expiry": "2026-12-03",
+      "calls": 28,
+      "puts": 49
+    },
+    {
+      "symbol": "^SPX",
+      "expiry": "2027-01-15",
+      "calls": 358,
+      "puts": 420
+    },
+    {
+      "symbol": "^SPX",
+      "expiry": "2027-04-16",
+      "calls": 166,
+      "puts": 215
+    }
+  ],
+  "valid_matched_pairs": 78,
+  "raw_rows": 255,
+  "rejection_counts": {
+    "zero_bid": 5,
+    "missing_or_ambiguous_pair": 94,
+    "outside_requested_strikes": 146
+  },
+  "retained_last_trade_utc": {
+    "SPXW261109C07525000": "2026-10-20T13:30:27+00:00",
+    "SPXW261109C07605000": "2026-10-26T14:25:24+00:00",
+    "SPXW261109C07680000": "2026-10-26T18:28:25+00:00",
+    "SPXW261109C07755000": "2026-10-26T16:21:25+00:00",
+    "SPXW261109C07830000": "2026-10-26T17:16:45+00:00",
+    "SPXW261109P07525000": "2026-10-26T18:37:58+00:00",
+    "SPXW261109P07605000": "2026-10-26T15:01:11+00:00",
+    "SPXW261109P07680000": "2026-10-26T19:14:32+00:00",
+    "SPXW261109P07755000": "2026-10-20T19:11:03+00:00",
+    "SPXW261109P07830000": "2026-10-22T18:31:14+00:00"
+  },
+  "last_trade_is_bid_ask_time": false
+}

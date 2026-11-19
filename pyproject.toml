@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dupire-identify"
+version = "0.5.1"
+description = "Continuous local variance bounds and exactly feasible diffusion witnesses"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.13", "highspy>=1.9", "tzdata; sys_platform == 'win32'"]
+license = "MIT"
+
+[project.urls]
+Repository = "https://github.com/malikberrada/ReallyIdentifiableLocalVarianceDupire"
+
+[project.optional-dependencies]
+yahoo = ["yfinance>=0.2.65", "exchange-calendars>=4.5"]
+cuda12 = ["cupy-cuda12x[ctk]>=13.6"]
+cuda13 = ["cupy-cuda13x[ctk]>=14.0"]
+dev = ["pytest>=8", "build>=1.2", "pandas>=2"]
+nvrtc-test = ["nvidia-cuda-nvrtc-cu12>=12.4"]
+nvrtc-test13 = ["nvidia-cuda-nvrtc>=13,<14"]
+
+[project.scripts]
+dupire-id = "dupire_identify.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dupire_identify = ["kernels/*.h", "kernels/*.cu", "kernels/*.cpp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
