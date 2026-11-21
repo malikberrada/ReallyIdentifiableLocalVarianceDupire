@@ -32,6 +32,7 @@ def settings(**changes):
     return dict(args,**changes)
 
 
+@unittest.skipUnless((EX / "raw_snapshot.json").is_file(), "Optional historical SPXW snapshot")
 class SPXWTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -173,6 +174,7 @@ class SPXWTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             prove_gamma(parity(self.pairs),self.pairs,self.target,self.t,settings(corridor=['1','1.1']))
 
+class IndependentSPXWTests(unittest.TestCase):
     def test_known_constant_diffusion_in_full_space(self):
         t=F(1,12)
         variance=F('0.04')
@@ -223,7 +225,9 @@ class SPXWTests(unittest.TestCase):
     def test_capture_persists_full_responses_and_partial_failures(self):
         import pandas as pd
         now=datetime(2026,10,26,19,30,tzinfo=timezone.utc)
-        c=json.loads(self.raw)['chains'][0]
+        c = {'underlying': {'symbol': '^SPX'},
+             'calls': [{'strike': 7680, 'bid': 89.6, 'ask': 90.0}],
+             'puts': [{'strike': 7680, 'bid': 86.0, 'ask': 87.0}]}
         def fetch(expiry,timeout):
             if not expiry:
                 return dict(expiries=['2026-11-09','2026-11-10'],version='fixture')

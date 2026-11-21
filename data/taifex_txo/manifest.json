@@ -1,0 +1,261 @@
+{
+  "date_range": [
+    "2026-10-01",
+    "2026-11-19"
+  ],
+  "options_provider": "Taiwan Futures Exchange (TAIFEX)",
+  "options_catalog": "https://data.gov.tw/en/datasets/11320",
+  "index_provider": "Taiwan Stock Exchange (TWSE)",
+  "index_catalog": "https://data.gov.tw/en/datasets/11755",
+  "attribution": "Securities and Futures Bureau, Financial Supervisory Commission, Executive Yuan, R.O.C. (2026). TAIFEX daily options trading information and TWSE weighted stock price index historical data.",
+  "license": "Open Government Data License, version 1.0",
+  "license_url": "https://data.gov.tw/en/license",
+  "projection": "Every regular-session TXO row with contract identifiers, official contract date, bid, ask and halt field. TWSE dates and closing levels in the study window. Source SHA-256 is the unmodified response at retrieval; bytes and SHA-256 describe the stored projection.",
+  "files": {
+    "2026-10-01.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F01&queryEndDate=2026%2F10%2F01",
+      "source_sha256": "78bdd0cce1e3713212388410bfc6ad3093395a3d6827212dd5f7f8af50109a25",
+      "rows": 2882,
+      "bytes": 187477,
+      "sha256": "4a0204c11a19c886a20fd85bbba25d9a4cc4fc8461aef373d209c2ece803f426"
+    },
+    "2026-10-02.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F02&queryEndDate=2026%2F10%2F02",
+      "source_sha256": "87d41b3bbc80306bc32725e6380ecc9721304dde8f5c3ad72e9ab68f9104c8b2",
+      "rows": 3204,
+      "bytes": 209118,
+      "sha256": "753fbd8c34fceccc225ca21bc580ba64e195da281e3dd8a5296aea27dca44444"
+    },
+    "2026-10-05.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F05&queryEndDate=2026%2F10%2F05",
+      "source_sha256": "8b5dad1d54509b737544e34131c1d46dfeaa2e81f566b1b1d9d38e47d120772a",
+      "rows": 2900,
+      "bytes": 185554,
+      "sha256": "9bc719777bf4c2159f3aacd685b55280e2285d52bad72881c53f5e4ca99cfbc8"
+    },
+    "2026-10-06.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F06&queryEndDate=2026%2F10%2F06",
+      "source_sha256": "0a90cb080191740122188f66ce7f2be4eb5d72e0c991622582e7ed55157aad11",
+      "rows": 3210,
+      "bytes": 205765,
+      "sha256": "2d3f6bfebef749c0266be5dd8fe9a44ae22efffd615169871573ff9f5648a801"
+    },
+    "2026-10-07.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F07&queryEndDate=2026%2F10%2F07",
+      "source_sha256": "79f3b561f853353b93012315d316d792b69dc20082adeaa04b3cb60a1d30a9cc",
+      "rows": 3300,
+      "bytes": 212911,
+      "sha256": "f67c86232fe8a2a0c1308e3b57846627f2fefc104f6bafa6077efa10c39f23bd"
+    },
+    "2026-10-08.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F08&queryEndDate=2026%2F10%2F08",
+      "source_sha256": "77cdda24c4c149edc46847d17d239b06f9407c8021d49070136da6871ff4a9c0",
+      "rows": 2954,
+      "bytes": 190451,
+      "sha256": "02473c05d4aa2a8b57e758664ccb5dda42ef0273e907e6ee54f4e183e41f4200"
+    },
+    "2026-10-12.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F12&queryEndDate=2026%2F10%2F12",
+      "source_sha256": "e884df9d1ed2d6a09ed491eb9fa0e4b692a6cda8d4d257443506878486241af3",
+      "rows": 3226,
+      "bytes": 205947,
+      "sha256": "824c2c814daa0ea4e1dae7a61714a575a3be737f08515b46ea289c00be0eea14"
+    },
+    "2026-10-13.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F13&queryEndDate=2026%2F10%2F13",
+      "source_sha256": "554fa1ebbe92ea3ec3edb0b9a447990bd5eebc478d42ac847b81c0f0f527b45a",
+      "rows": 2880,
+      "bytes": 176288,
+      "sha256": "17000b211abd4529c796d09fd333bcfa5b8fd782bd8528237cd384443f73e8c4"
+    },
+    "2026-10-14.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F14&queryEndDate=2026%2F10%2F14",
+      "source_sha256": "e1ff32d6181ff8c529bae322efdc708e38ffc421b83606f21eb6cf6a4e53fb00",
+      "rows": 3186,
+      "bytes": 205401,
+      "sha256": "e0240f063d768b56a4b8d0e2a7dd1c7111c533756c9bd151ef7b5ad066e89338"
+    },
+    "2026-10-15.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F15&queryEndDate=2026%2F10%2F15",
+      "source_sha256": "bcedba50c6278551e07f37b95220c18c590f2f7d1fef97f66d28e295d94c9091",
+      "rows": 2852,
+      "bytes": 179974,
+      "sha256": "3f3fc30c97f974ae9799e1b4758efba08c22e5b264381b9b78b66be9da7da20d"
+    },
+    "2026-10-16.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F16&queryEndDate=2026%2F10%2F16",
+      "source_sha256": "3dece0d522986dbcb362b08708a25e75937419fbec9b333db79cb2d356329d70",
+      "rows": 3282,
+      "bytes": 207979,
+      "sha256": "8b58f8ff8778b535b42657a52674b927477461a55d8d13120305439be0c6a7b6"
+    },
+    "2026-10-19.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F19&queryEndDate=2026%2F10%2F19",
+      "source_sha256": "3dd30a58a16fd2e6c7f49205d023ff2c1ebe7fdc9fb5bba72b82df3e2ec26c49",
+      "rows": 2918,
+      "bytes": 186263,
+      "sha256": "d72c390b6f8b61c63440c0a014efc0ce438d0405d619e2ade7a4ed000d377a73"
+    },
+    "2026-10-20.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F20&queryEndDate=2026%2F10%2F20",
+      "source_sha256": "c4e6110a7192225cc4c1e60a4c358affb3f74b907f2b8b38023b2ed89d690751",
+      "rows": 2940,
+      "bytes": 187083,
+      "sha256": "26120a475b6c4ad9d9f7dbf605ea661950552c2e9aba19c8d6ac0d3e0acd9e50"
+    },
+    "2026-10-21.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F21&queryEndDate=2026%2F10%2F21",
+      "source_sha256": "66854dc0923433d45c7028b1f15c41630193c32c4099f08c1dc86c4f59e5f304",
+      "rows": 3256,
+      "bytes": 207801,
+      "sha256": "9a3c653fa86ec0423db01b9fb793b068677944ffaf182cb10b1c957d16092113"
+    },
+    "2026-10-22.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F22&queryEndDate=2026%2F10%2F22",
+      "source_sha256": "3213fa01c8814ecc7e9e6a7ed4b6b179cbcf08b38d753e3cebda72b75e19b4f6",
+      "rows": 2968,
+      "bytes": 191290,
+      "sha256": "2ea4f62203ef64934756740fcc74159cef6eec1d46f2290c5986c494fc16e4ef"
+    },
+    "2026-10-27.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F27&queryEndDate=2026%2F10%2F27",
+      "source_sha256": "dc41a45dcbe462362cbc2d0e6a00f372b584d153231330ad5a322eb1b63aac66",
+      "rows": 3256,
+      "bytes": 205420,
+      "sha256": "ac5993078ddd1e3af32b69589c1c6e4477140d32f3a678d4fb7a8833d28b279d"
+    },
+    "2026-10-28.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F28&queryEndDate=2026%2F10%2F28",
+      "source_sha256": "a028c08887e2d3ec83b3059a42b56a7e575c1384db2a2775a570224790f4d150",
+      "rows": 3124,
+      "bytes": 199424,
+      "sha256": "f7e62dd901627b561f29b64cf1ad9aca36b01aa8e3465bcea50f61d353d9b1b3"
+    },
+    "2026-10-29.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F29&queryEndDate=2026%2F10%2F29",
+      "source_sha256": "55deb00ff776fc600f0e1824649d229b98d5a52d30e66a1e05806122237e32b2",
+      "rows": 2856,
+      "bytes": 185369,
+      "sha256": "8e2fa1774b1171c457a7e0866e4e13bfcf009f83c8b91c995e88d1c36d582347"
+    },
+    "2026-10-30.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F30&queryEndDate=2026%2F10%2F30",
+      "source_sha256": "3f2fb0409237b1dd6e26a215d2bcbe16404174bbe902278d77dfe8eef20ccdb0",
+      "rows": 3102,
+      "bytes": 193422,
+      "sha256": "9d8e6b891388f32016f0853688e68ee8c84cab201d740173c6f7309b6d954d55"
+    },
+    "2026-11-02.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F02&queryEndDate=2026%2F11%2F02",
+      "source_sha256": "f18fdf8be589f68c10fbbc88e54aede328529642e73dc5c10f1300951ba9160d",
+      "rows": 2978,
+      "bytes": 187587,
+      "sha256": "667be9ed8e83f7923dc2188774888b874aedaafe23ec5e27a14c7d73d32d918c"
+    },
+    "2026-11-03.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F03&queryEndDate=2026%2F11%2F03",
+      "source_sha256": "c7b6e73c2cc45ebaab520944b46352c21757f56e71b00b79fb167570744a84e1",
+      "rows": 3030,
+      "bytes": 187025,
+      "sha256": "0d28ddfd87a65479a2edeb0c08afefb857a3a5e9b4bbcf88bc715061ebd4b082"
+    },
+    "2026-11-04.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F04&queryEndDate=2026%2F11%2F04",
+      "source_sha256": "0681d981c1791bdbe0b6d8f10e3140bbb12929f1837faf5bf4a68341ff0ecb7b",
+      "rows": 3404,
+      "bytes": 219965,
+      "sha256": "c306b278b8a0c337c094087576861a1e17b6d37e2e3c0e18c92dfaa0dbb5e0be"
+    },
+    "2026-11-05.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F05&queryEndDate=2026%2F11%2F05",
+      "source_sha256": "559ba2956d51fbcc3e3cd27020b1644179b1afdabcbd4bf9e751ca6df9bc8da5",
+      "rows": 3078,
+      "bytes": 194846,
+      "sha256": "372d2373d60525d2bdc4effa21a43da8a8a4b99923afaae4e2100a6027afb199"
+    },
+    "2026-11-06.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F06&queryEndDate=2026%2F11%2F06",
+      "source_sha256": "75f743abc0331fb19f9a2e30e388fa489d9e616856445280496e27fbe11c576d",
+      "rows": 3552,
+      "bytes": 221194,
+      "sha256": "fb7b94ee6fc598355062c80005798f6c73d82bbee60233fb1b3f64d7bf9efd30"
+    },
+    "2026-11-09.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F09&queryEndDate=2026%2F11%2F09",
+      "source_sha256": "2fc5ca02b6270384ab6eb40b4b81fc16cf2cd91f70cf188c2ce62f7f22418bf0",
+      "rows": 3444,
+      "bytes": 219833,
+      "sha256": "44d4172c672d71038039b9718b9aa4171dcc56183064ac25dbbde00ea9ecca4f"
+    },
+    "2026-11-10.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F10&queryEndDate=2026%2F11%2F10",
+      "source_sha256": "28f4b1b2f8bb24d8fb1a85ffd8f626e9454c9652870f2652dfff71ef5cea2765",
+      "rows": 3448,
+      "bytes": 218206,
+      "sha256": "b78763ec6c148245e1969db8652e56dffc65e6c090c3b2175f3dc50492fe63fd"
+    },
+    "2026-11-11.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F11&queryEndDate=2026%2F11%2F11",
+      "source_sha256": "0f025aafe82c4eca062061d5806189ee664644ef71e47dccaf1afb0f3fa60991",
+      "rows": 3718,
+      "bytes": 236786,
+      "sha256": "342c637eba87060fb4dde49e8f7b85159331fb94c099a5fcb469501f77870248"
+    },
+    "2026-11-12.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F12&queryEndDate=2026%2F11%2F12",
+      "source_sha256": "4e8aa79e4669749060c7abf4c2abbddd873327dbfd48393a06e33e2f581e5227",
+      "rows": 3348,
+      "bytes": 210072,
+      "sha256": "9f8740e99439f76e431c103fa2ed452b77ec5988a4727903d8ba48398a2060f4"
+    },
+    "2026-11-13.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F13&queryEndDate=2026%2F11%2F13",
+      "source_sha256": "bec0b26ea5e306a5810e0bd262b210c8865b7f16e2dfb4690c9a7b1fe3493694",
+      "rows": 3578,
+      "bytes": 229802,
+      "sha256": "ed644d70dfdb9f39ad824c9e61d1922223ee9641496e345089842e118a0dc6e1"
+    },
+    "2026-11-16.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F16&queryEndDate=2026%2F11%2F16",
+      "source_sha256": "20278be231c551e2e7561446efc56dafc90993f5de868f8d6eb7849466a89441",
+      "rows": 3106,
+      "bytes": 195773,
+      "sha256": "98f42b7c774802d16b68cccf3fffd64e747bea9abef3146da22f91af2b5ebc31"
+    },
+    "2026-11-17.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F17&queryEndDate=2026%2F11%2F17",
+      "source_sha256": "674808e6d11c3b0508e15658b731d7dd5b68a6950756225d1c5241f7b7710f19",
+      "rows": 3244,
+      "bytes": 206814,
+      "sha256": "887dedab0651d114be9c785755f9491bcd1bf93ae5fb0819b00fdbedaf206d2c"
+    },
+    "2026-11-18.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F18&queryEndDate=2026%2F11%2F18",
+      "source_sha256": "072a638ff5e4f47d5431190e8097ecfdc984ab61a9230ef86e2fa1d42b42bfde",
+      "rows": 3530,
+      "bytes": 216829,
+      "sha256": "a2427f2ba8652cc829f71e2bafe5d95e1fdc46136ec46ad9e36b8215855e4b1b"
+    },
+    "2026-11-19.csv": {
+      "url": "https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F11%2F19&queryEndDate=2026%2F11%2F19",
+      "source_sha256": "bb751b15369626619b2a734664af28f35979e9a60e55792cee13ba456068e182",
+      "rows": 3164,
+      "bytes": 202285,
+      "sha256": "9b216f8ada38fac49bc622488322f6a318b6635f44d18518288f612a1902b2af"
+    },
+    "202610.json": {
+      "url": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261001&response=json",
+      "source_sha256": "52f38cde8842e25e33a45b220f09ff814d254363691a740643537cf1f58414c4",
+      "rows": 19,
+      "bytes": 1018,
+      "sha256": "cb5b68494a1d0626b01eb05ebca87ec416ea9097f37fdb8c1324f39a03e844bd"
+    },
+    "202611.json": {
+      "url": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261101&response=json",
+      "source_sha256": "2c8b0982a23091436f07c66d83bd208fbaa8a567df274ed5860947cfc552365f",
+      "rows": 14,
+      "bytes": 773,
+      "sha256": "a6d2b589d24368093d9626c34745433d703ef2b7e514100dd1f3126ea27a2666"
+    }
+  }
+}

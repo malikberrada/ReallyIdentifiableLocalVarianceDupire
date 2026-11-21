@@ -1,0 +1,31 @@
+{
+  "protocol": "TAIFEX_dual_precision_1",
+  "sessions": 33,
+  "panels": 126,
+  "two_verified_bounds": 89,
+  "both_within_target": 19,
+  "dates_with_both": 7,
+  "winner": {
+    "date": "2026-10-07",
+    "expiry": "2026-10-16",
+    "series": "202610F3",
+    "status": "certified",
+    "eligible_pairs": 95,
+    "contracts": 10,
+    "panel_sha256": "4d32fdb66a3265e03c4ee9a7a355a9ba95a052afada03306de0c820356281aa4",
+    "target_call": "TXO:202610F3:C:49800",
+    "fixed_estimate": "0.039411",
+    "fixed_error": "0.003327",
+    "auto_estimate": "0.039760",
+    "auto_error": "0.003334",
+    "objective": "0.003334",
+    "both": true
+  },
+  "status_counts": {
+    "certified": 89,
+    "insufficient_quotes": 29,
+    "no_verified_witness": 6,
+    "partial_certificate": 1,
+    "witness_only": 1
+  }
+}

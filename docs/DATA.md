@@ -1,46 +1,37 @@
-# Market observation, calendar and synthetic inputs
+# TXO market data and synthetic controls
 
-| Input | Origin | Role |
-| --- | --- | --- |
-| `examples/yahoo_spxw/raw_snapshot.json` | Yahoo Finance via yfinance, capture `attempt_01` on 26 October 2026 | Raw option books before the local-variance filters |
-| `examples/yahoo_spxw/session_closes.json` | Frozen schedule supplied with the market certificate | PM session closes for ACT/365F maturity |
-| `examples/exact_initial/normalized.csv` | Author's 27 synthetic European call quotes | Nine-month and one-year gamma certificates and R3 |
-| `examples/general_informative/normalized.csv` | Author's 14 synthetic European call quotes | Informative continuous-frontier example |
+The study uses regular-session bid and ask quotes for European TAIEX options from the Taiwan Futures Exchange (TAIFEX). Daily TAIEX closes from the Taiwan Stock Exchange (TWSE) determine the strike anchors. The checkout includes 104,918 regular-session option rows and 33 index closes from October 1 through November 19, 2026. All quote prices are in index points. [Study data and manifest](../data/taifex_txo/) · [Official TAIFEX history](https://www.taifex.com.tw/enl/eng3/optDailyMarketView)
 
-The downloader pins upstream commit `423b81938ac4661811119497b03ee3487acaacc5`. The upstream repository contains several captures on the same date. The local-variance result uses `data/raw/yahoo/2026-10-26/attempt_01.json`. Both SHA-256 and byte length were matched to the raw file named in the local certificate. The session table is versioned with the code and checked independently. The local file paths in the table for the synthetic chains are those of the numerical supplement. The main reproduction driver independently generates both CSV inputs under each run’s `synthetic-inputs/` directory. [Machine-readable record](../data/provenance.json) · [Upstream data catalogue](https://github.com/malikberrada/DupireLocalVolatilityForward/blob/423b81938ac4661811119497b03ee3487acaacc5/docs/DATA.md)
+| File | Contents |
+| --- | --- |
+| `data/taifex_txo/YYYY-MM-DD.csv` | Every regular-session TXO row returned for that date. Columns give date, product, series, contract date, strike, call/put, best bid, best ask, session and halt indicator. Missing, crossed and unpaired observations remain visible. |
+| `data/taifex_txo/YYYYMM.json` | Trading dates and closing TAIEX levels for the sessions in the study. Dates use the calendar and field names in the TWSE report. |
+| `data/taifex_txo/manifest.json` | Official request, response SHA-256, stored file size, row count and stored SHA-256 for each file. The stored option records are sorted and the stored index records are ordered by date. |
+| `examples/txo_optimization/panels/` | One reference per eligible session–expiry combination, including settings, panel and result hashes, and any verified witness and hedge positions. |
+| `examples/txo_optimization/panels.csv` | Results for all 126 combinations, including cases where the verifier could establish only one bound or none. |
 
-## Download the observed books
+## October 7, 2026
 
-```console
-python scripts/download_data.py
-```
+The `202610F3` series expires on October 16. Its 318 regular-session records yield 95 eligible pairs. The five strikes nearest 98%, 99%, 100%, 101% and 102% of the 49,806.37 TAIEX close are 48,800, 49,300, 49,800, 50,400 and 50,800. The paired quote table flags those five strikes. [95 paired quotes](../examples/txo_optimization/20261007_202610F3_pairs.csv) · [TAIFEX daily CSV](https://www.taifex.com.tw/enl/eng3/optDataDown?down_type=1&commodity_id=TXO&queryStartDate=2026%2F10%2F07&queryEndDate=2026%2F10%2F07) · [TWSE monthly report](https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261007&response=json)
 
-For the original raw file alone, this is the underlying HTTPS request. Modern Windows includes `curl.exe`. On Linux and macOS use `curl`.
+The canonical panel digest includes the close and all 318 series records before quote filtering. It is `4d32fdb66a3265e03c4ee9a7a355a9ba95a052afada03306de0c820356281aa4`. The canonical result digest is `d702aca3eb93b7eb846759ce41725c5b45d08a35ee67e1415d69bef43c3ef9da`. Canonical hashes refer to the verifier's serialized objects. The manifest separately identifies the bytes of each input file. [Case provenance](../data/provenance.json) · [Full witness and hedge certificate](../examples/txo_optimization/20261007_202610F3_certificate.json)
 
-```console
-curl --fail --location --output attempt_01.json https://raw.githubusercontent.com/malikberrada/DupireLocalVolatilityForward/423b81938ac4661811119497b03ee3487acaacc5/data/raw/yahoo/2026-10-26/attempt_01.json
-```
+A discount factor of 1 and a forward of 49,777 satisfy the parity strips for all 95 pairs. The common diffusion witness is checked against the ten contracts at the five selected strikes. The two certificates bound gamma-weighted annual local variance for the 49,800 call in a model of the TXO settlement value. TAIFEX bases this value on the average index level during the final 30 minutes before the close on the settlement day. The bounds are conditional on treating the daily spreads as simultaneous, with deterministic carry and annual variance in [0.0025, 0.25]. [TXO contract specifications](https://www.taifex.com.tw/enl/eng2/tXO)
 
-The acquisition ran from 19:31:29.106182 to 19:31:43.546751 UTC. It received 799 call rows and 1,042 put rows over six expiries. For 9 November the archive contains 102 call rows and 153 put rows. The audit finds 78 matched strikes and selects five pairs, at strikes 7,525, 7,605, 7,680, 7,755 and 7,830. Selection uses the raw spot only as a strike-selection reference. The selected slice's underlying timestamp is 19:16:27 UTC, with a reported 15-minute delay. Each contract's `lastTradeDate` refers to its latest trade. The paper's common-time interpretation of bid and ask remains an assumption. [Contract-level audit](../examples/yahoo_spxw/audit.json)
+## Reacquisition and offline verification
 
-## Run the original yfinance collection protocol on a new date
+`scripts/download_data.py` requests official historical reports, keeps the fields listed above and verifies the resulting files against the published hashes. The default prepares `options.csv` and `index.json` for the main case. `--history` prepares the full dated cache. `--offline` applies the same hash checks to the files in the checkout. `scripts/taifex_txo.py replay` can also save the original responses and verify the published panel even when unrelated report formatting changes. [Reproduction commands](../README.md#download-fresh-copies-from-both-exchanges)
 
-The upstream collector selects six expiries spread across the eligible calendar window before examining prices. In a separate directory, the following commands run that collector with the recorded symbol, root and expiry window. They obtain a **new capture** during a regular market session. The input records the actual expiries chosen on 26 October. The legacy snapshot omits the installed yfinance version. The upstream replication lock specifies yfinance 1.7.0. [Collector source](https://github.com/malikberrada/DupireLocalVolatilityForward/blob/423b81938ac4661811119497b03ee3487acaacc5/collect_coherent_yahoo.py)
+The retrospective scan enumerates series expiring in 7–60 calendar days on the 33 trading sessions. It ranks cases with two certificates by the larger of the two displayed error bounds. Ties are resolved by observation date, expiry and series. Both bounds were obtained in 89 of 126 cases. Nineteen met the 0.01 target under both gamma references, across seven sessions. [Protocol](../examples/txo_optimization/protocol.json) · [All outcomes](../examples/txo_optimization/panels.csv)
 
-```console
-git clone https://github.com/malikberrada/DupireLocalVolatilityForward.git upstream-collector
-git -C upstream-collector checkout --detach 423b81938ac4661811119497b03ee3487acaacc5
-cd upstream-collector
-python -m pip install -r requirements-lock.txt
-python -m pip install --no-build-isolation --no-deps .
-python collect_coherent_yahoo.py --symbol "^SPX" --root SPXW --min-days 14 --max-days 180 --max-expiries 6 --attempts 1 --out runs/new-capture
-```
+## Attribution
 
-Use a separate Python 3.12 environment for the upstream lock. From this local-variance repository, its own live collector can be run as follows. This version chooses the earliest eligible expiries. It stores each returned table and the session calendar in the new snapshot.
+Securities and Futures Bureau, Financial Supervisory Commission, Executive Yuan, R.O.C. (2026). Taiwan Futures Exchange, *Options daily trading information*, dataset 11320. The stored CSVs contain the regular-session study fields from the dated TXO reports and the contract date supplied by TAIFEX. [Government data catalog](https://data.gov.tw/en/datasets/11320) · [Historical report fields](https://www.taifex.com.tw/enl/eng3/optDailyMarketView)
 
-```console
-python -m pip install -r requirements/live.txt
-python -I scripts/yahoo_spxw.py collect --min-days 14 --max-days 180 --max-expiries 6 --out runs/live-spxw
-```
+Securities and Futures Bureau, Financial Supervisory Commission, Executive Yuan, R.O.C. (2026). Taiwan Stock Exchange, *Weighted Stock Price Index Historical Data*, dataset 11755. The stored index files contain the trading date and closing level for each study session. [Government data catalog](https://data.gov.tw/en/datasets/11755)
 
-Both programs call `yf.Ticker("^SPX").option_chain(expiry)` for each selected expiry. Passing an old date to this method selects a contract expiration; replaying the historical order book requires the frozen file above. [yfinance option-chain API](https://github.com/ranaroussi/yfinance/blob/main/yfinance/ticker.py)
+The cataloged observations are available for reuse under the terms of the Open Government Data License, version 1.0. The MIT license covers the project software. [Data license](https://data.gov.tw/en/license) · [Software license](../LICENSE)
+
+## Synthetic inputs
+
+The driver regenerates the 27-call and 14-call synthetic panels from their analytical definitions, then verifies the two CSV digests and the two published gamma certificates. The R3 campaign uses a separately pinned numerical supplement. [Synthetic inputs](../scripts/synthetic_inputs.py) · [Input and certificate digests](../data/provenance.json) · [R3 supplement record](../data/supplement.json)

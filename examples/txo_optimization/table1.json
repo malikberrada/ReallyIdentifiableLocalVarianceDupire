@@ -1,0 +1,65 @@
+{
+  "txo": {
+    "date": "2026-10-07",
+    "expiry": "2026-10-16",
+    "series": "202610F3",
+    "regular_rows_at_expiry": 318,
+    "eligible_pairs": 95,
+    "selected_strikes": [
+      "48800",
+      "49300",
+      "49800",
+      "50400",
+      "50800"
+    ],
+    "panel_sha256": "4d32fdb66a3265e03c4ee9a7a355a9ba95a052afada03306de0c820356281aa4",
+    "status": "certified",
+    "prior": [
+      "1/400",
+      "1/4"
+    ],
+    "contracts": 10,
+    "all_pairs_parity": "nonempty",
+    "witness_verified": true,
+    "market_synchronization_verified": false,
+    "target_call": "TXO:202610F3:C:49800",
+    "gamma": {
+      "0.04": {
+        "reference_variance": "1/25",
+        "estimate": "0.039411",
+        "absolute_error_at_most": "0.003327",
+        "outer": [
+          "0.036084",
+          "0.042737"
+        ],
+        "epsilon": "0.01",
+        "target_met": true
+      },
+      "auto": {
+        "reference_variance": "16619791/419430400",
+        "estimate": "0.039760",
+        "absolute_error_at_most": "0.003334",
+        "outer": [
+          "0.036427",
+          "0.043094"
+        ],
+        "epsilon": "0.01",
+        "target_met": true
+      }
+    }
+  },
+  "synthetic_gamma": {
+    "synthetic_1_4": {
+      "estimation": "0.039810",
+      "erreur_absolue_au_plus": "0.009797",
+      "precision_cible_garantie": true,
+      "sha256": "4f851b765bc93e0ff2d885d85078596f910d0407c7d596c0443cdf04fba99823"
+    },
+    "synthetic_2_4": {
+      "estimation": "0.039420",
+      "erreur_absolue_au_plus": "0.008310",
+      "precision_cible_garantie": true,
+      "sha256": "3eac57beb5732947ce7778d1f55551e8f9856309627a96fafd404010d89fa416"
+    }
+  }
+}

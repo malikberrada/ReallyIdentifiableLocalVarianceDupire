@@ -1,14 +1,15 @@
 # Certifier une moyenne gamma sur une chaîne Yahoo SPXW
 
-Depuis la racine du dépôt, le guide principal installe les versions de référence. Les calculs portent sur une échéance et sur tous les calls et puts retenus à cette échéance. [Installation et résultats](../README.md) · [Téléchargement des données originales](DATA.md)
+Depuis la racine du dépôt, le guide principal installe les versions de référence. Les calculs portent sur une échéance et sur tous les calls et puts retenus à cette échéance. [Installation et résultats](../README.md)
 
 ## Rejouer la validation historique
+
+Pour cette expérience antérieure, placer sa copie locale de `raw_snapshot.json` dans `examples/yahoo_spxw/`. Les empreintes attendues figurent dans `manifest.json`.
 
 ```powershell
 $py = ".\.venv\Scripts\python.exe"
 $yf = ".\scripts\yahoo_spxw.py"
 $ex = ".\examples\yahoo_spxw"
-& $py scripts/download_data.py
 & $py -I $yf verify --run $ex
 $tag = Get-Date -Format "yyyyMMdd_HHmmssfff"
 $out = ".\runs\spxw_rejeu_$tag"

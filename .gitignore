@@ -10,6 +10,7 @@ data/downloaded/
 # Optional author-supplied evidence is installed locally.
 examples/*
 !examples/yahoo_spxw/
+!examples/txo_optimization/
 !examples/general_informative_domain.json
 examples/yahoo_spxw/raw_snapshot.json
 rejeu_r3/*.zip

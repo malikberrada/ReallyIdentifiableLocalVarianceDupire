@@ -4,6 +4,8 @@ recursive-include docs *.md
 recursive-include scripts *.ps1 *.py
 recursive-include requirements *.txt
 include data/provenance.json data/supplement.json
+recursive-include data/taifex_txo *.csv *.json
+recursive-include examples/txo_optimization *.json *.csv
 include examples/general_informative_domain.json
 include examples/yahoo_spxw/audit.json examples/yahoo_spxw/model.json examples/yahoo_spxw/certificate.json examples/yahoo_spxw/manifest.json examples/yahoo_spxw/session_closes.json
 include rejeu_r3/calcul.py rejeu_r3/REJEU.md rejeu_r3/requirements.txt
